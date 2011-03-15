@@ -1,0 +1,297 @@
+
+/********************************      Basic Structure      ********************************/
+
+html {
+                font-size: 100%;
+                height: 100%;
+                margin-bottom: 1px; /* Always show a scrollbar to avoid jumping when the scrollbar appears  */
+                }
+
+body {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #eee;
+                background: #f0f0f0 url('/resources/images/background.jpg') top left repeat;
+                font-size: 12px;
+                }
+
+/********************************      Elements styling      ********************************/
+
+h1, h2, h3, h4, h5, h6 {
+                font-family: Helvetica, Arial, sans-serif;
+                color: #eee;
+                font-weight: bold;
+                }
+
+h1            { font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 31px; font-weight: bold; color: #fff; 
+				  position: absolute; top: -1000px;  /* Remove this line and delete the logo (in the HTML) if you don't want an image as a logo */
+				}
+				
+h2            { font-size: 26px; padding: 0 0 10px 0; }
+h3            { font-size: 17px; padding: 0 0 10px 0; }
+h4            { font-size: 16px; padding: 0 0 5px 0; }
+h5            { font-size: 14px; padding: 0 0 5px 0; }
+h6            { font-size: 12px; padding: 0 0 5px 0; }
+
+
+a              { color: #A16FD1; text-decoration: none; }
+a:hover     { color: #eee; }
+a:active     { color: #ccc; }
+a:focus     { outline: 1px; }
+
+strong       { font-weight: bold; color: #eee; }
+
+small   		{ font-size: 0.85em; }
+
+pre           { font-family: monospace; }
+
+p {
+                padding: 5px 0 10px 0;
+                line-height: 1.6em;
+                }
+
+/********************************      General Classes      ********************************/
+
+.clear {
+                clear: both;
+                }
+				
+.align-left {
+                float: left;
+                }
+				
+.align-right {
+                float: right;
+                }
+
+/*************** Forms ***************/
+
+form label {
+                display: block;
+                padding: 0 0 10px;
+                font-weight: bold;
+                }
+             
+form fieldset legend {
+                font-weight: bold;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                }
+                
+form p small {
+                font-size: 0.75em;
+                color: #777;
+                }
+				
+				
+form input.text-input,
+form select,
+form textarea {
+                padding: 6px;
+                font-size: 13px;
+                background: #fff url('/resources/images/bg-form-field.gif') top left repeat-x;
+                border: 1px solid #d5d5d5;
+				color: #333;
+                }
+            
+form .small-input {
+                width: 25% !important;
+                }
+                
+form .medium-input {
+                width: 50% !important;
+                }
+                
+form .large-input {
+                width: 97.5% !important;
+				font-size: 16px !important;
+				padding: 8px !important;
+                }
+
+
+
+                
+form textarea {
+                width: 97.5% !important;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+		
+.column-left form .large-input, .column-right form .large-input, .middle-box form .large-input,
+.column-left form .textarea, .column-right form textarea, .middle-box form textarea {
+		width:95%!important;
+}
+                
+form select {
+                padding: 4px;
+                background: #fff;
+                }
+				
+form input[type="checkbox"],
+form input[type="radio"] {
+				padding: 0;
+                background: none;
+				border: 0;
+                }
+
+input[type=submit], input {
+		
+		display: inline-block;
+		padding: 5px 10px 6px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		
+		
+		position: relative;
+		cursor: pointer;
+		     border-radius: 5px;
+		   -moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+
+		background-image: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0.32, rgb(0,0,0)),
+				color-stop(0.66, rgb(31,25,38))
+			    );
+		background-image: -moz-linear-gradient(
+		    center bottom,
+		    rgb(0,0,0) 32%,
+		    rgb(31,25,38) 66%
+		);
+}
+input[type=submit] {
+		/*height:16px;*/
+}
+input.openid-login {
+		height:14px;
+		width:280px;
+}
+
+@font-face { font-family: 'Chunkfive'; src: url('/resources/fonts/Chunkfive.otf'); }
+@font-face {
+    font-family: 'WalkwaySemiBoldRegular';
+    src: url('/resources/fonts/Walkway_SemiBold-webfont.eot?') format('eot'),
+         url('/resources/fonts/Walkway_SemiBold-webfont.woff') format('woff'),
+         url('/resources/fonts/Walkway_SemiBold-webfont.ttf') format('truetype'),
+         url('/resources/fonts/Walkway_SemiBold-webfont.svg#webfontGYMf4jLH') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h2 {
+		font-family:'Chunkfive';
+}
+
+img.icon {
+		vertical-align:middle;
+}
+
+#container {
+		text-align:center
+}
+#middle {
+		width:480px;
+		margin:90px auto;
+}
+#content-box {
+		border:1px solid #fff;
+		margin-top:50px;
+		width:480px;
+		height:320px;
+		/*position:relative;*/
+		   -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+		        border-radius: 7px;
+		/* Fallback for web browsers that doesn't support RGBa */
+		background: rgb(0, 0, 0);
+		background: rgba(0, 0, 0, 0.6);
+		color:#fff;
+		padding:18px 8px 8px 8px;
+		
+		
+}
+#content-box p.description {
+		font-family:'WalkwaySemiBoldRegular';
+		font-size:14pt;
+}
+
+form#pure, #providers {
+		margin-top:50px;
+}
+
+#copyright {
+		position:absolute;
+		bottom:10px;
+		right: 10px;
+		font-size:8pt;
+}
+
+
+.providerIcon {
+		width:24px;
+		height:24px;
+		padding:2px 0 0px 30px;
+		line-height:24px;
+		font-size:18px;
+		height:24px;
+		text-align:left;
+		font-family:'Chunkfive';
+		float:left;
+		width:88px;
+		cursor:pointer;
+}
+
+a:hover, .providerIcon:hover {
+		text-shadow: 1px 1px 6px #fff;
+}
+
+#google {background:url('/resources/icons/google.png') no-repeat left center; width:80px;}
+#facebook {background:url('/resources/icons/facebook.png') no-repeat left center;width:100px;}
+#twitter {background:url('/resources/icons/twitter.png') no-repeat left center;width:92px;}
+#yahoo {background:url('/resources/icons/yahoo.png') no-repeat left center;width:80px;}
+
+#classic {
+                display:none;
+}
+#classic form{
+                text-align:left;
+}
+
+#classic form input.signin {
+                margin-left:131px;
+                float:left;
+}
+
+#classic form input[type=submit]:hover {
+                text-shadow: 1px 1px 6px #fff;
+}
+
+
+#classic form input#email,
+#classic form input#password {
+                width:247px;
+}
+                
+#classic form input {
+                margin-left:10px;
+}
+
+form label {
+                width:120px;
+                float:left;
+                text-align:right;
+                font-family:'Chunkfive';
+                font-size:18px;
+                line-height:36px;
+                font-weight:normal;
+                vertical-align:middle;
+                
+}
+
+input:hover + label,
+input:focus + label
+{
+                text-shadow: 1px 1px 6px #fff;
+}
