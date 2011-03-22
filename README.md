@@ -52,3 +52,5 @@ However the following items included in this repository are licensed differently
 * File `/resources/images/background.jpg` is a photography copyrighted by Sebastian Bober http://sebastianbober.com. See http://www.flickr.com/photos/sebastianbober/5261257281/ for license details
 * KOHANA framework released under BSD License
 * jQuery released under MIT/GPL2 licenses
+* LightOpenID release under MIT license
+* Facebook PHP SDK release under  Apache Licence
