@@ -27,7 +27,7 @@ For more details please visit http://doppnet.com
       `name` varchar(200) default NULL,
       `email` varchar(200) default NULL,
       PRIMARY KEY  (`id`)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+     ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
 
     CREATE TABLE `associations` (
@@ -42,7 +42,7 @@ For more details please visit http://doppnet.com
       UNIQUE KEY `openidassociations-unique-openid` USING BTREE (`openid`),
       KEY `openidassociations-users-userid` USING BTREE (`user_id`),
       CONSTRAINT `openidassociations_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+     ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
 ##License
 This code is released under MIT License.
